@@ -40,6 +40,10 @@ class autobuilder_before_install (
    patch::file { '/home/genius/test/yocto-autobuilder/lib/python2.7/site-packages/autobuilder/buildsteps/MakeImageMD5s.py':
 	  diff_source => '/home/genius/test/autobuilder-patches/before-install/0002-md5sums-for-now.patch',
    }
+
+   patch::file { '/home/genius/test/yocto-autobuilder/yocto-autobuilder-setup':
+          diff_source => '/home/genius/test/autobuilder-patches/before-install/0003-genius-genius.patch',
+   }
 }
 
 
