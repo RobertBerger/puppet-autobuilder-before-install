@@ -1,0 +1,30 @@
+{
+  "author": "",
+  "checksums": {
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests/init.pp": "9413d8379bbe9f40b7e12766282b7cc8",
+    "Modulefile": "bd4ce5282a68439d6ad0ce0406cd1b21",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "tests/init.pp": "f6ce2d937cc339c3f12ef8d309a33aa3",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "README.markdown": "410993e03f769ec34ba4cfcb0f963142"
+  },
+  "dependencies": [
+    {
+      "name": "puppetlabs/vcsrepo",
+      "version_requirement": "1.0.0"
+    },
+    {
+      "name": "tohuwabohu/patch",
+      "version_requirement": "1.0.0"
+    }
+  ],
+  "description": "",
+  "license": "",
+  "name": "rber-autobuilder_before_install",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "types": [],
+  "version": "0.1.0"
+}
