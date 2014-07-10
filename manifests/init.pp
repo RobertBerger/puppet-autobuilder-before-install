@@ -32,6 +32,14 @@ class autobuilder_before_install (
             user => 'genius'
    }
 
+   vcsrepo { "/home/genius/test/meta-mainline":
+            ensure => present,
+            provider => git,
+            source => 'https://github.com/RobertBerger/meta-mainline.git',
+            revision => 'daisy-training-v3.14.x',
+            user => 'genius'
+   }
+
    include patch
 
    patch::file { '/home/genius/test/yocto-autobuilder/yocto-master/master.cfg':
