@@ -42,7 +42,7 @@ class autobuilder_before_install (
 
    include patch
 
-   patch::file { '/home/genius/test/yocto-autobuilder/yocto-master/master.cfg':
+   patch::file { '/home/genius/test/yocto-autobuilder/yocto-controller/controller.cfg':
            diff_source => '/home/genius/test/autobuilder-patches/before-install/0001-allow-only-1-build-at-a-time.patch',
            owner => 'genius',
            group => 'genius',
