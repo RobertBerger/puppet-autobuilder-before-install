@@ -21,7 +21,8 @@ class autobuilder_before_install (
             provider => git,
             source => 'git://git.yoctoproject.org/yocto-autobuilder',
 #           revision => '46485b117ffde2d2255ed3d66d671e2684385035',
-            revision => 'b6f4f74a7475e7180a8e8d1d51b6a4dfb563706d',
+#           revision => 'b6f4f74a7475e7180a8e8d1d51b6a4dfb563706d',
+            revision => '3d7aa93fc8ca9c3c38c58a66f7a03d9683b0c220',
             user => 'genius'
    }
 
@@ -36,7 +37,7 @@ class autobuilder_before_install (
             ensure => present,
             provider => git,
             source => 'https://github.com/RobertBerger/meta-mainline.git',
-            revision => 'daisy-training-v3.14.x',
+            revision => 'dizzy-training-v3.19.x',
             user => 'genius'
    }
 
