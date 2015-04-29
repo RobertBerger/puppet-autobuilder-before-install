@@ -24,7 +24,8 @@ class autobuilder_before_install (
 #           revision => 'b6f4f74a7475e7180a8e8d1d51b6a4dfb563706d',
 #           revision => '3d7aa93fc8ca9c3c38c58a66f7a03d9683b0c220',
 #           revision => '92c7f27328dc444271a0949b858906612ffa40f3',
-            revision => '90053633470114703660bf6edf856dfe33710bd0',
+#           revision => '90053633470114703660bf6edf856dfe33710bd0',
+            revision => 'b7e7d2b8224f1261013cbd1e81cf166b63262d90',
             user => 'genius'
    }
 
@@ -39,7 +40,7 @@ class autobuilder_before_install (
             ensure => present,
             provider => git,
             source => 'https://github.com/RobertBerger/meta-mainline.git',
-            revision => 'dizzy-training-v3.19.x',
+            revision => 'fido-training-v3.19.x',
             user => 'genius'
    }
 
