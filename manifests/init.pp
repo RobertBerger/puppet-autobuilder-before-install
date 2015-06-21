@@ -61,4 +61,11 @@ class autobuilder_before_install (
           owner => 'genius',
           group => 'genius',
    }
+
+   patch::file { '/home/genius/test/yocto-autobuilder/config/autobuilder.conf.example':
+          diff_source => '/home/genius/test/autobuilder-patches/before-install/0004-generalize-num-of-CPUs.patch',
+          owner => 'genius' ,
+          group => 'genius' ,
+   }
+
 }
