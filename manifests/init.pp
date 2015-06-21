@@ -25,7 +25,8 @@ class autobuilder_before_install (
 #           revision => '3d7aa93fc8ca9c3c38c58a66f7a03d9683b0c220',
 #           revision => '92c7f27328dc444271a0949b858906612ffa40f3',
 #           revision => '90053633470114703660bf6edf856dfe33710bd0',
-            revision => 'b7e7d2b8224f1261013cbd1e81cf166b63262d90',
+#           revision => 'b7e7d2b8224f1261013cbd1e81cf166b63262d90',
+            revision => 'f31361e6d68c1c08274bb67fdc9d07e2f1645c2b',
             user => 'genius'
    }
 
@@ -40,7 +41,7 @@ class autobuilder_before_install (
             ensure => present,
             provider => git,
             source => 'https://github.com/RobertBerger/meta-mainline.git',
-            revision => 'fido-training-v3.19.x',
+            revision => 'fido-training-v4.1.x',
             user => 'genius'
    }
 
