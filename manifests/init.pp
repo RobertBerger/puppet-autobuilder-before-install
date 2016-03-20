@@ -26,8 +26,8 @@ class autobuilder_before_install (
 #           revision => '92c7f27328dc444271a0949b858906612ffa40f3',
 #           revision => '90053633470114703660bf6edf856dfe33710bd0',
 #           revision => 'b7e7d2b8224f1261013cbd1e81cf166b63262d90',
-#           revision => 'f31361e6d68c1c08274bb67fdc9d07e2f1645c2b',
-            revision => 'bbce83239bf2f6afc0542288582133415c5ed7d9',
+            revision => 'f31361e6d68c1c08274bb67fdc9d07e2f1645c2b',
+#           revision => 'bbce83239bf2f6afc0542288582133415c5ed7d9',
             user => 'genius'
    }
 
