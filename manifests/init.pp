@@ -26,8 +26,8 @@ class autobuilder_before_install (
 #           revision => '92c7f27328dc444271a0949b858906612ffa40f3',
 #           revision => '90053633470114703660bf6edf856dfe33710bd0',
 #           revision => 'b7e7d2b8224f1261013cbd1e81cf166b63262d90',
-            revision => 'f31361e6d68c1c08274bb67fdc9d07e2f1645c2b',
-#           revision => 'bbce83239bf2f6afc0542288582133415c5ed7d9',
+#           revision => 'f31361e6d68c1c08274bb67fdc9d07e2f1645c2b',
+            revision => 'f9b4e02730a5e712ee9085e2480f9a3b8b00f56d',
             user => 'genius'
    }
 
@@ -54,29 +54,46 @@ class autobuilder_before_install (
             user => 'genius'
    }
 
-
    include patch
 
-   patch::file { '/home/genius/test/yocto-autobuilder/yocto-controller/controller.cfg.example':
-           diff_source => '/home/genius/test/autobuilder-patches/before-install/0001-allow-only-1-build-at-a-time.patch',
-           owner => 'genius',
-           group => 'genius',
-   }
+    patch::file { '/home/genius/test/yocto-autobuilder/bin/worker-init':
+             diff_source => '/home/genius/test/autobuilder-patches/before-install/0001-genius-genius-part1.patch',
+             owner => 'genius',
+             group => 'genius',
+    }
+
+    patch::file { '/home/genius/test/yocto-autobuilder/yocto-autobuilder-setup':
+             diff_source => '/home/genius/test/autobuilder-patches/before-install/0002-genius-genius-part2.patch',
+             owner => 'genius',
+             group => 'genius',
+    }
+
+    patch::file { '/home/genius/test/yocto-autobuilder/yocto-controller/controller.cfg.example':
+             diff_source => '/home/genius/test/autobuilder-patches/before-install/0003-allow-only-one-build-at-the-time.patch',
+             owner => 'genius',
+             group => 'genius',
+    }
+
+#   patch::file { '/home/genius/test/yocto-autobuilder/yocto-controller/controller.cfg.example':
+#           diff_source => '/home/genius/test/autobuilder-patches/before-install/0001-allow-only-1-build-at-a-time.patch',
+#           owner => 'genius',
+#           group => 'genius',
+#   }
 
  #  patch::file { '/home/genius/test/yocto-autobuilder/lib/python2.7/site-packages/autobuilder/buildsteps/MakeImageMD5s.py':
 #         diff_source => '/home/genius/test/autobuilder-patches/before-install/0002-md5sums-for-now.patch',
 #   }
 
-   patch::file { '/home/genius/test/yocto-autobuilder/yocto-autobuilder-setup':
-          diff_source => '/home/genius/test/autobuilder-patches/before-install/0003-genius-genius.patch',
-          owner => 'genius',
-          group => 'genius',
-   }
+#   patch::file { '/home/genius/test/yocto-autobuilder/yocto-autobuilder-setup':
+#          diff_source => '/home/genius/test/autobuilder-patches/before-install/0003-genius-genius.patch',
+#          owner => 'genius',
+#          group => 'genius',
+#   }
 
-   patch::file { '/home/genius/test/yocto-autobuilder/config/autobuilder.conf.example':
-          diff_source => '/home/genius/test/autobuilder-patches/before-install/0004-generalize-num-of-CPUs.patch',
-          owner => 'genius' ,
-          group => 'genius' ,
-   }
+#   patch::file { '/home/genius/test/yocto-autobuilder/config/autobuilder.conf.example':
+#          diff_source => '/home/genius/test/autobuilder-patches/before-install/0004-generalize-num-of-CPUs.patch',
+#          owner => 'genius' ,
+#          group => 'genius' ,
+#   }
 
 }
