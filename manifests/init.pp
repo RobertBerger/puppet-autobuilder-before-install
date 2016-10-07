@@ -74,6 +74,13 @@ class autobuilder_before_install (
              group => 'genius',
     }
 
+
+    patch::file { '/home/genius/test/yocto-autobuilder/lib/python2.7/site-packages/autobuilder/buildsteps/PublishArtifacts.py':
+             diff_source => '/home/genius/test/autobuilder-patches/before-install/0004-PublichArtifacts-searches-toolchain-in-wrong-place.patch',
+             owner => 'genius',
+             group => 'genius',
+    }
+
 #   patch::file { '/home/genius/test/yocto-autobuilder/yocto-controller/controller.cfg.example':
 #           diff_source => '/home/genius/test/autobuilder-patches/before-install/0001-allow-only-1-build-at-a-time.patch',
 #           owner => 'genius',
