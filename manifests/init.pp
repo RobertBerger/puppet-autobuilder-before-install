@@ -76,7 +76,7 @@ class autobuilder_before_install (
 
 
     patch::file { '/home/genius/test/yocto-autobuilder/lib/python2.7/site-packages/autobuilder/buildsteps/PublishArtifacts.py':
-             diff_source => '/home/genius/test/autobuilder-patches/before-install/0004-PublichArtifacts-searches-toolchain-in-wrong-place.patch',
+             diff_source => '/home/genius/test/autobuilder-patches/before-install/0004-deal-only-with-built-toolchains-cp-also-md5-and-mani.patch',
              owner => 'genius',
              group => 'genius',
     }
