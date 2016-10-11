@@ -46,11 +46,14 @@ class autobuilder_before_install (
             user => 'genius'
    }
 
+# bb: d458b310b43d4f69afbd16362f55cf2bf5afcb24 is needed for Python 2 support
+# see: https://github.com/kergoth/bb/issues/28
 
    vcsrepo { "/home/genius/test/bb":
             ensure => present,
             provider => git,
             source => 'https://github.com/kergoth/bb.git',
+            revision => 'd458b310b43d4f69afbd16362f55cf2bf5afcb24',
             user => 'genius'
    }
 
