@@ -42,7 +42,7 @@ class autobuilder_before_install (
             ensure => present,
             provider => git,
             source => 'https://github.com/RobertBerger/meta-mainline.git',
-            revision => 'jethro-training-v4.4.x',
+            revision => 'pyro-training-v4.9.x',
             user => 'genius'
    }
 
